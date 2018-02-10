@@ -1,0 +1,62 @@
+.tesla-wheels__component {
+  float: left;
+  width: 355px;
+}
+
+.tesla-wheels__title {
+  letter-spacing: 2px;
+  font-style: 16px;
+}
+
+.tesla-wheels__container {
+  margin: 10px 0 0;
+}
+
+.tesla-wheels__item {
+  display: inline-block;
+  width: 47%;
+  height: 65px;
+  margin: 0 8px 0 0;
+  padding: 20px 0 0 90px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  background-repeat: no-repeat;
+  background-size: 44px;
+  background-position: 24.21053% 9px;
+}
+
+.tesla-wheels__item--19 {
+  background-image: url(../../assets/wheels/19.svg);
+}
+
+.tesla-wheels__item--21 {
+  background-image: url(../../assets/wheels/21.svg);
+}
+
+.tesla-wheels__item--focused {
+  background-color: #f2f2f2;
+}
+
+.tesla-wheels__item--active {
+  border-color: #39f;
+  box-shadow: inset 0 0 0 1px #39f;
+}
+
+.tesla-wheels__item p {
+  font-family: 'RobotoNormal';
+  font-weight: 400;
+  font-size: 16px;
+  color: #333;
+}
+
+.tesla-wheels__item input[type=radio] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
