@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import './TeslaStats.css'
 
 const TeslaStats = ({ carstats }) => (
-  <div className="tesla-stats">
+  <div className="tesla-stats tesla-stats-animation">
     <ul>
       {carstats.map((stat) => (
         <li key={stat.model}>

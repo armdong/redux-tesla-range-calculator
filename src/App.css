@@ -15,6 +15,10 @@
   letter-spacing: 3px;
 }
 
+.tesla-battery h1.title-animation {
+  animation: focus-in-contract-bck 2.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
 .tesla-climate-container {
   float: left;
   width: 420px;
@@ -27,4 +31,37 @@
 .tesla-controls {
   display: block;
   width: 100%;
+}
+
+.tesla-controls-animation {
+  animation: slit-in-horizontal 1.45s 2.5s ease-out both;
+}
+
+@keyframes slit-in-horizontal {
+  0% {
+    transform: translateZ(-800px) rotateX(90deg);
+    opacity: 0;
+  }
+  54% {
+    transform: translateZ(-160px) rotateX(87deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateZ(0) rotateX(0);
+  }
+}
+
+@keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    transform: translateZ(300px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    letter-spacing: 3px;
+    transform: translateZ(0);
+    filter: blur(0);
+    opacity: 1;
+  }
 }
