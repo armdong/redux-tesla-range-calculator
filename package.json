@@ -2,6 +2,7 @@
   "name": "redux-tesla-range-calculator",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://armdong.github.io/redux-tesla-range-calculator",
   "dependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
@@ -16,9 +17,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "clean": "rimraf build"
+    "clean": "rimraf build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
+    "gh-pages": "^1.1.0",
     "rimraf": "^2.6.2"
   }
 }
